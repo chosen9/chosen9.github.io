@@ -1,0 +1,100 @@
+/**
+ *
+ * @package Welcome
+ */
+
+
+.welcome-widget {
+    margin-top: pxtorem(250);
+
+    &-image {
+        position: relative;
+
+        &-box-info {
+            position: absolute;
+            padding: 2rem;
+            width: 250px;
+            background-color: $primary;
+            color: #fff;
+            top: 40px;
+
+            span:last-child {
+                font-size: pxtorem(20)
+            }
+        }
+
+        &-wrapper {
+
+
+            img {
+                max-width: pxtorem(404);
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+        }
+    }
+
+
+    &-user-intro {
+
+        &-heading{
+            margin-top: 0;
+            color: #5D5B5B;
+            font-size: 1.8rem;
+            font-weight: 400;
+            
+            &::first-letter{
+                text-transform: uppercase;
+            }
+        }
+
+        &-service {
+
+            &-list {
+                margin-top: 2rem;
+                list-style-type: none;
+                padding-left: pxtorem(32);
+
+                li {
+                    position: relative;
+
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: pxtorem(-38);
+                        top: pxtorem(-1);
+                        transform: scale(0.7);
+                        height: pxtorem(30);
+                        width: pxtorem(30);
+                        background-image: url(../../assets/icons/check.png);
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+
+        &-button {
+            display: block;
+            padding: 0.75rem 1.5rem;
+            margin-top: 1rem;
+            font-size: 1rem;
+            color: #fff;
+            border: none;
+            box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+            background-image: linear-gradient(45deg, #1ffff5, #0c55fb, #fff);
+            background-size: 250% 150%;
+            border-radius: 50px;
+            transition: background-size 0.354789s;
+
+            &:hover {
+                background-size: 120% 100%;
+            }
+
+            &:active{
+                box-shadow: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+<section class="project">
+        <div class="container">
+            <div class="project-heading">
+                <h1>Project Completed</h1>
+            </div>
+
+            <!-- Slider main container -->
+            <div class="project-sliders">
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <img src="assets/img/kevin-bhagat-zNRITe8NPqY-unsplash.jpg" alt="project-1">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <img src="assets/img/austin-distel-21GWwco-JBQ-unsplash.jpg" alt="project-2">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <img src="assets/img/carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg" alt="project-3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>

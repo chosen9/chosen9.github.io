@@ -1,0 +1,213 @@
+.settings {
+
+  &-toggler {
+    position: fixed;
+    top: 35%;
+    right: 0;
+
+
+    &-list {
+      border-radius: .25rem 0 0 .25rem;
+      list-style-type: none;
+      padding: .45rem;
+      background-color: #fff;
+      box-shadow: 2px 2px 8px 0px #2d35422e;
+
+      &-item {
+
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: .56rem .89rem;
+        background-color: rgb(245, 248, 248);
+        margin-top: .45rem;
+        cursor: pointer;
+        transition: background-color .3s;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        svg {
+          height: 1.15rem;
+          vertical-align: middle;
+          transition: .3s;
+        }
+
+
+      }
+
+      .open-settings {
+        svg {
+          animation-name: anim-rotate-360;
+          animation-duration: 8s;
+          animation-play-state: running;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+
+          path {
+            fill: $primary;
+          }
+        }
+
+        &:hover {
+          background-color: $primary;
+        }
+
+        &:hover svg path {
+          fill: #fff;
+        }
+      }
+
+      .reload-page {
+        svg {
+          path {
+            fill: $warning;
+          }
+        }
+
+        &:hover {
+          background-color: rgb(255, 187, 0);
+        }
+
+        &:hover svg path {
+          fill: #fff;
+        }
+
+        &:hover svg {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+
+  &-content {
+    position: fixed;
+    z-index: 1001;
+    right: -400px;
+    top: 0;
+    bottom: 0;
+    width: pxtorem(400);
+    background-color: #fff;
+    padding: 2rem;
+    transition: right .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &-active{
+      right: 0;
+    }
+
+  }
+
+
+  &-header {
+    position: relative;
+  }
+
+  &-heading {
+    h1 {
+      font-weight: 400;
+      margin-top: 0;
+      font-size: 1.25rem;
+    }
+  }
+
+  &-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    width: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+
+
+    &-icon {
+      position: relative;
+
+      &-bar-1,
+      &-bar-2 {
+        display: block;
+        height: pxtorem(1);
+        width: pxtorem(30);
+        background-color: $dark;
+      }
+
+      &-bar-1 {
+        transform: translate(0, 18px) rotate(45deg);
+      }
+
+      &-bar-2 {
+        transform: translate(-1px, 12px) rotate(-44deg);
+      }
+    }
+  }
+
+  &-title {
+    font-weight: 100;
+    margin-top: 0;
+  }
+
+  .svg-icon {
+    height: 1em;
+  }
+
+  &-credit {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    font-size: .843rem;
+  }
+
+
+
+  &-theme {
+    &-list {
+      list-style-type: none;
+      padding-left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      &-link {
+        height: pxtorem(40);
+        width: pxtorem(40);
+        border-radius: 50%;
+        border: 1px solid rgb(187, 191, 192);
+        margin-left: .5rem;
+        cursor: pointer;
+
+        &.active {
+          outline: 1px dotted $dark;
+        }
+
+        &:active {
+          transform: scale(.95);
+        }
+      }
+
+      .theme-light {
+        background-color: $light;
+      }
+
+
+      .theme-dark {
+        background-color: $dark;
+        border-color: $dark;
+      }
+    }
+  }
+
+  &-navbar {
+    &-switcher {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+}

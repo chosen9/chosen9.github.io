@@ -1,0 +1,111 @@
+.image-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(20, 22, 26);
+  z-index: 1003;
+
+
+  &-active{
+    display: block;
+  }
+
+  &-open {
+    overflow: hidden;
+  }
+
+  &-close {
+    border: none;
+    background-color: transparent;
+
+    &-icon {
+      svg {
+        line {
+          stroke: rgb(199, 199, 199);
+        }
+      }
+
+      &:hover {
+        svg {
+          line {
+            stroke: rgb(255, 255, 255);
+          }
+        }
+      }
+    }
+  }
+
+  &-dialog {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &-header,
+  &-footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding: pxtorem(16);
+    background-color: rgba(0, 0, 0, 0.356);
+    z-index: 1;
+    transition: top .3s linear, bottom .53s linear;
+    transition-delay: 2s;
+  }
+
+  &-header {
+    top: -56px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &-footer {
+    bottom: -56px;
+    text-align: center;
+    color: #fff;
+  }
+
+  &:hover .image-modal-header {
+    top: 0;
+    transition-delay: 0s;
+  }
+
+  &:hover .image-modal-footer {
+    bottom: 0;
+    transition-delay: 0s;
+  }
+
+  &-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+
+    img {
+      height: 100vh;
+      width: auto;
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width: $medium-device){
+  .image-modal{
+    &-body{
+      img{
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+[class*="anim"] {
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    backface-visibility: hidden;
+}
+
+.anim {
+    &-rotate-360 {
+        animation-name: anim-rotate-360;
+        animation-duration: 10s;
+    }
+
+    &-state-change {
+        animation-name: anim-stateChange;
+        animation-duration: 40s;
+    }
+
+    &-state-change-2 {
+        animation-name: anim-stateChange-2;
+        animation-duration: 40s;
+    }
+
+    &-scale-toggle {
+        animation-name: anim-scale-toggle;
+        animation-duration: 10s;
+    }
+
+    &-delay-3s {
+        animation-delay: 3s;
+    }
+}
+
+
+@keyframes anim-rotate-360 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes anim-stateChange {
+    0% {
+        transform: translate(0) rotate(0deg);
+    }
+
+    20% {
+        transform: translate(-73px, 1px) rotate(-36deg);
+    }
+
+    40% {
+        transform: translate(-141px, -72px) rotate(-72deg);
+    }
+
+    60% {
+        transform: translate(-83px, -122px) rotate(-108deg);
+    }
+
+    80% {
+        transform: translate(40px, -72px) rotate(-144deg);
+    }
+
+    to {
+        transform: translate(0) rotate(0deg);
+    }
+}
+
+
+@keyframes anim-stateChange-2 {
+    0% {
+        transform: translate(20px, -50px);
+    }
+
+    10% {
+        transform: translate(-50px, 50px);
+    }
+
+    20% {
+        transform: translate(120px, 200px);
+    }
+
+    40% {
+        transform: translate(-10px, 50px);
+    }
+
+    50% {
+        transform: translate(200px, 150px);
+    }
+
+    60% {
+        transform: translate(100px, 200px);
+    }
+
+    80% {
+        transform: translate(150px, 10px);
+    }
+
+    90% {
+        transform: translate(40px, -50px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+
+@keyframes anim-scale-toggle {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+
+    70% {
+        transform: scale(.3) rotate(12deg);
+    }
+
+    to {
+        transform: scale(1) rotate(0deg);
+    }
+}

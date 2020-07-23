@@ -1,0 +1,53 @@
+.input-switch {
+  position: relative;
+  width: 100px;
+  border-radius: .25rem;
+  overflow: hidden;
+  border: 1px solid $border-color;
+
+  input {
+    -webkit-appearance: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  input:checked+&-container {
+    left: 0;
+  }
+
+  &-container {
+    display: flex;
+    position: relative;
+    height: pxtorem(35);
+    width: 100%;
+    left: -50%;
+    transition: left .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  &-on,
+  &-empty,
+  &-off {
+    flex: 0 0 50%;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 35px;
+    font-size: .9rem;
+  }
+
+  &-on {
+    background-color: darken($color: $primary, $amount: 5%);
+    color: #fff;
+  }
+
+  &-empty {
+    background-color: #fff;
+  }
+
+  &-off {
+    background-color: $light;
+  }
+}

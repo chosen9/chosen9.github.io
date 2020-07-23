@@ -1,0 +1,43 @@
+/**
+ *
+ * @package Style
+ * Will generate the style sheet on dist folders
+ */
+
+@import '../../modules/sass/base/variables';
+@import '../../modules/sass/base/reboot';
+
+@import '../../modules/sass/functions/functions';
+@import '../../modules/sass/mixins/mixins';
+
+@import '../../modules/sass/components/animation';
+@import '../../modules/sass/components/btns';
+@import '../../modules/sass/components/icons';
+@import '../../modules/sass/components/utilities';
+@import '../../modules/sass/components/image-modal';
+@import '../../modules/sass/components/switch';
+
+@import '../../modules/sass/components/grid';
+
+/**
+ *
+ * @packages Components
+ * All the important components will be imported (using loop) here
+ */
+
+@import '../../modules/sass/layout/intro';
+@import '../../modules/sass/layout/navbar';
+@import '../../modules/sass/layout/mobile-navbar';
+@import '../../modules/sass/layout/banner';
+@import '../../modules/sass/layout/welcome';
+@import '../../modules/sass/layout/project';
+@import '../../modules/sass/layout/business';
+@import '../../modules/sass/layout/review';
+@import '../../modules/sass/layout/counter';
+@import '../../modules/sass/layout/card';
+@import '../../modules/sass/layout/contact';
+@import '../../modules/sass/layout/footer';
+
+@import '../../modules/sass/layout/settings';
+
+@import '../../modules/sass/layout/responsive';

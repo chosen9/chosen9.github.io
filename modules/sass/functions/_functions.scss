@@ -1,0 +1,29 @@
+/**
+ *
+ * @package Functions
+ * 
+ * will ....
+ */
+
+
+/**
+ *
+ * @function pxtorem()
+ * 
+ * The pxtorem() will take a intiger value that should be a px
+ * then it will convert it to rem and return the result like
+ *
+ * pxtorem (16) will return 1rem :)
+ *
+ * @param $int = intiger value
+ * @calculation
+ *      16px equal to 1rem
+ *       1px   ,,  ,, ( 1/16 )rem
+ *                    = 0.0625rem
+ * @return ( 0.0625 * $int ) + rem 
+ *  
+ */
+
+@function pxtorem ($int) {
+    @return ((1/16)*$int)+rem;
+}

@@ -1,0 +1,46 @@
+.counter {
+  position: relative;
+  margin-top: 3rem;
+  padding-top: pxtorem(52);
+  padding-bottom: pxtorem(52);
+  background-image: url(../../assets/img/count-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.712);
+  }
+
+  &-item {
+    position: relative;
+    text-align: center;
+  }
+
+  &-logo{
+    opacity: .5;
+  }
+
+  &-text{
+    color: #B8C0D9;
+    text-transform: uppercase;
+    padding-top: 1rem;
+  }
+
+  &-number{
+    color: #B8C0D9;
+    font-weight: 600;
+    left: 50%;
+    top: 35%;
+    position: absolute;
+    font-size: pxtorem(42);
+    transform: translate(-50%, -50%);
+  }
+}

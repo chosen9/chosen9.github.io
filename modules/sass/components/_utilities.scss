@@ -1,0 +1,58 @@
+/**
+ *
+ * @package Utilities
+ */
+
+
+.svg-icon {
+
+    svg {
+        display: inline-block;
+        width: 1.125rem;
+        height: 1rem;
+        font-size: inherit;
+        overflow: visible;
+        vertical-align: -.125rem;
+    }
+}
+
+.text-light {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: $dark;
+}
+
+.set-svg {
+
+    img,
+    svg {
+        width: 100%;
+    }
+}
+
+.svg-icon {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 1rem;
+    height: auto;
+}
+
+.text-light {
+    color: $color-text-light;
+    font-size: pxtorem(16);
+    font-weight: 300;
+}
+
+.display-1 {
+    font-size: pxtorem(52);
+}
+
+.position-relative{
+    position: relative;
+}
+
+@media only screen and (max-width: 767.98px) {
+    .d-sm-none {
+        display: none;
+    }
+}

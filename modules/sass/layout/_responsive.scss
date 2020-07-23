@@ -1,0 +1,149 @@
+@media screen and (max-width: $desktop-device) {
+
+  //predefine utility classes
+  .d-sm-none {
+    display: none;
+  }
+
+  //moving object banner
+  .moving-object-banner {
+    display: none;
+  }
+
+  //business
+  .business {
+    &-products {
+      &-list {
+        flex-wrap: wrap;
+      }
+
+      &-item {
+        flex: 0 0 45%;
+        margin: 2rem auto;
+      }
+    }
+  }
+
+
+  //service-cards
+  .service-cards {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+
+    &-wrapper {
+      flex-wrap: wrap;
+    }
+  }
+
+  //counter
+  .counter {
+    background-position: center;
+
+    &-text {
+      padding-top: 0;
+    }
+  }
+
+  //footer
+  .footer {
+    &-social-list {
+      flex-wrap: wrap;
+    }
+
+    &-nav-list {
+      flex-wrap: wrap;
+    }
+  }
+
+
+}
+
+
+@media screen and (max-width: $medium-device) {
+
+  .navbar,
+  .moving-object-banner,
+  .set-svg-wrapper,
+  .settings {
+    display: none;
+  }
+
+  .mobile-navbar {
+    display: block;
+  }
+
+  .banner {
+    margin-top: 7rem;
+  }
+
+  .display-1 {
+    font-size: 3rem;
+  }
+
+  .welcome-widget {
+    margin-top: 4rem;
+  }
+
+  .counter-item {
+    margin-bottom: 2rem;
+  }
+
+  .business-intro h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-widget-user-intro-heading {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .client-review {
+    margin-top: 0;
+  }
+
+  .client-review-item {
+    margin: 3rem 3rem 5rem !important;
+  }
+
+  .client-review-item-img {
+    height: pxtorem(70);
+    width: pxtorem(70);
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 5px solid #FFF;
+    bottom: -3.0625rem;
+  }
+
+  label[for="input-email"] {
+    margin-top: 2rem;
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: $small-device) {
+
+  body {
+    font-size: 90%;
+  }
+
+  //review
+  .client-review {
+    &-item {
+      height: auto;
+      padding: 1rem;
+      margin: 2rem 1rem;
+    }
+  }
+
+  //business
+  .business {
+    &-products {
+      &-item {
+        flex: 0 0 75%;
+        margin: 1rem auto;
+      }
+    }
+  }
+
+}

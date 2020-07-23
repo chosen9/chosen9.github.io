@@ -1,0 +1,27 @@
+.swiper-button-prev-1,
+.swiper-button-next-1 {
+  background: $background-color;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid $border-color;
+
+  &::after{
+    transform: scale(.6);
+  }
+}
+
+
+.project {
+  padding-top: 7rem;
+
+  &-heading {
+    h1 {
+      margin-top: 0;
+      font-weight: 400;
+      color: $dark;
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+}

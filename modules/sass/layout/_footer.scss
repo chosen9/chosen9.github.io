@@ -1,0 +1,90 @@
+.footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid $border-color;
+
+  &-social-list,
+  &-nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0;
+
+    a {
+      display: block;
+    }
+  }
+
+  &-social-list {
+    a {
+      height: pxtorem(40);
+      width: pxtorem(40);
+      border-radius: 50%;
+      background-color: transparent;
+      color: #fff;
+      margin: 1rem 1rem .5rem;
+      text-align: center;
+      vertical-align: middle;
+      text-decoration: none;
+      line-height: pxtorem(40);
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &-link {
+
+      &-facebook {
+        background-color: $primary !important;
+
+        &:hover,
+        &:focus {
+          box-shadow: 0 0 0 pxtorem(3) lighten($primary, 40%);
+        }
+      }
+
+      &-twitter {
+        background-color: rgb(23, 186, 250) !important;
+
+        &:hover,
+        :focus {
+          box-shadow: 0 0 0 pxtorem(3) lighten(rgb(23, 186, 230), 40%);
+        }
+      }
+
+      &-instagram {
+        background-color: rgb(247, 30, 138) !important;
+
+        &:hover,
+        :focus {
+          box-shadow: 0 0 0 pxtorem(3) lighten(rgb(247, 30, 138), 40%);
+        }
+      }
+
+      &-google {
+        background-color: rgb(255, 102, 0) !important;
+
+        &:hover,
+        :focus {
+          box-shadow: 0 0 0 pxtorem(3) lighten(rgb(255, 102, 0), 40%);
+        }
+      }
+    }
+  }
+
+  &-nav-list {
+    &-link {
+      padding: .45rem 1.25rem;
+      color: $dark;
+      text-decoration: none;
+    }
+  }
+
+  &-copyright {
+    display: block;
+    text-align: center;
+  }
+}

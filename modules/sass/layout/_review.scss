@@ -1,0 +1,36 @@
+.swiper-button-prev-2,
+.swiper-button-next-2{
+  &::after{
+    color: #000;
+    transform: scale(.59);
+  }
+}
+
+.client-review {
+  &-heading {
+    font-weight: 400;
+    text-align: center;
+
+  }
+
+  &-item {
+    position: relative;
+    height: pxtorem(80);
+    padding: 2rem;
+    box-shadow: 2px 4px 8px 0 rgba(71, 89, 105, 0.164);
+    margin: 3rem 3rem;
+
+    &-text {
+      color: rgb(44, 56, 63);
+    }
+
+    &-img {
+      position: absolute;
+      bottom: pxtorem(-33);
+      right: pxtorem(25);
+      height: pxtorem(70);
+      width: pxtorem(70);
+      border-radius: 50%;
+    }
+  }
+}
